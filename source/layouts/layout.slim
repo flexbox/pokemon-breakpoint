@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    meta charset='utf-8'
+    title= data.page.title
+    meta name='description' content="A fun way to make the connection between breaking points in CSS media queries and Javascript files."
+    meta name='keywords' content='David, leuliette, pokemon, css, breakpoint, javascript'
+    meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
+    meta property='og:description' content="A fun way to make the connection between breaking points in CSS media queries and Javascript files."
+    meta property='og:image' content='http://tiste.io/images/pokeball.png'
+    meta property='og:site_name' content='flexbox'
+    meta property='og:title' content=(data.page.title)
+    meta property='og:type' content='website'
+    meta property='og:url' content='http://pokemon-breakpoint.fr'
+
+    link href='favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lato:300,700'
+    = stylesheet_link_tag 'application'
+  body
+    .container-fluid
+      = partial 'header'
+      == yield
+      = partial 'footer'
+
+    script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
+    script src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js'
+    = javascript_include_tag 'application'
+    javascript:
+      var _gaq=[['_setAccount','UA-42477577-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.async=true;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
