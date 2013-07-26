@@ -1,0 +1,51 @@
+.pokemon{
+  width: 100%;
+  height: 650px;
+  background-image: url(../img/sprite_pokemon.jpg);
+  background-position: center 0px;
+}
+.footer:after{
+  content: "Salameche";
+}
+
+
+
+@media #{$small} {
+  .pokemon{
+    background-image: url(../img/sprite_pokemon.jpg);
+    background-position: 0px -650px;
+  }
+  .footer:after{
+    content: "Reptincel";
+  }
+
+}
+
+@media #{$medium} {
+  .pokemon{
+    background-image: url(../img/sprite_pokemon.jpg);
+    background-position: 0px -1300px;
+  }
+  .footer:after{
+    content: "Dracaufeu";
+  }
+}
+
+@media #{$large} {
+  .pokemon{
+    background-image: url(../img/sprite_pokemon.jpg);
+    background-position: 0px -1950px;
+  }
+
+  .footer:after{
+    content: "Dracaufeu - attaque";
+  }
+
+  @media #{$landscape} {
+    background-image: url(../img/dracaufeu_vol.jpg);
+  }
+}
+
+
+
+
