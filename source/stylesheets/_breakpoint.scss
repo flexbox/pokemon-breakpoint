@@ -4,8 +4,16 @@
   background-image: url(../img/sprite_pokemon.jpg);
   background-position: center 0px;
 }
-.footer:after{
+.media-query--name{
+  font-family: "Kreon";
+  text-align: center;
+  font-weight: bold;
+}
+
+.media-query--name:after{
   content: "Salameche";
+  font-size: 3em;
+  text-transform: uppercase;
 }
 
 @media #{$small} {
@@ -13,8 +21,8 @@
     background-image: url(../img/sprite_pokemon.jpg);
     background-position: 0px -650px;
   }
-  .footer:after{
-    content: "Reptincel";
+  .media-query--name:after{
+    content: "reptincel";
   }
 
 }
@@ -24,8 +32,8 @@
     background-image: url(../img/sprite_pokemon.jpg);
     background-position: 0px -1300px;
   }
-  .footer:after{
-    content: "Dracaufeu";
+  .media-query--name:after{
+    content: "dracaufeu";
   }
 }
 
@@ -35,11 +43,16 @@
     background-position: 0px -1950px;
   }
 
-  .footer:after{
-    content: "Dracaufeu - attaque";
+  .media-query--name:after{
+    content: "dracaufeu_flame";
   }
 
-  @media #{$landscape} {
-    background-image: url(../img/dracaufeu_vol.jpg);
+}
+
+@media #{$landscape} {
+  background-image: url(../img/dracaufeu_vol.jpg);
+
+  .media-query--name:after{
+    content: "dracaufeu_vol";
   }
 }
