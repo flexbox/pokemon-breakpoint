@@ -1,3 +1,4 @@
+activate :gzip
 activate :livereload
 
 set :css_dir, 'stylesheets'
