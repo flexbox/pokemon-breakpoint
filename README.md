@@ -24,9 +24,19 @@ In `stylesheets/_breakpoint.scss` remplace `#media-query--name:after` by your ne
     }
 
 ## How it works ?
-1. Identify the amazing fire colored `#media-query--name` element.
-2. The javascript function `gottaCatchThemAll(element)` extract the naming ...
-3. ... defined in the `pokeball()`function.
+```js
+// You create a new PokeBreak instance and pass the element id to the constructor
+//  (`#media-query--name` here).
+var pkBrk = new PokeBreak('media-query--name');
+// Than, you can read the current state
+console.log('Current state is '+pkBrk.pokeball()+'.');
+// Or you can listen to state changes
+pkBrk.listen(function(oldPokemon, newPokemon) {
+	console.log('Just switched from '+oldPokemon+' to '+newPokemon+'.');
+});
+
+You can listen to different break point groups by creating many PokeBreak instances.
+```
 
 ## Tutorial
 
