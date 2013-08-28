@@ -1,4 +1,4 @@
-# Pokemon breakpoint
+# [Pokemon breakpoint](http://pokemonbreakpoint.fr)
 
 ### Make a connection between your CSS and your Javascript
 
@@ -42,6 +42,10 @@ You can listen to different break point groups by creating many PokeBreak instan
 
 - Read the [associated blog post](http://blog.davidleuliette.com)
 - Ding into code and read `stylesheets/pokemon.scss`
+
+## Demo
+
+You can watch the online version : http://pokemonbreakpoint.fr
 
 ## Contribute
 
