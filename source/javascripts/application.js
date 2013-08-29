@@ -1,4 +1,4 @@
-//= require main.js
+//= require pokebreak.js
 
 var pokeball = (function () {
   var pkBrk = new PokeBreak('media-query--name');
@@ -10,7 +10,7 @@ var pokeball = (function () {
 
 	// Helper to read cur state
 	return function() {
-		
+
 		var pokemon=pkBrk.pokeball();
 
 		if (pokemon == 'salameche') {

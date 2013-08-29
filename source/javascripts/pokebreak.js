@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 David Leuliette, Nicolas Froidure
+ * Copyright (C) 2013 David Leuliette, Nicolas Froidure
  *
  * This file is free software;
  * you can redistribute it and/or modify it under the terms of the GNU
@@ -26,7 +26,7 @@
 		var _mediaQuery = document.getElementById(elementId)
 			, _curPokemon = null
 			, that=this;
-		
+
 		// Methods
 		this.pokeball = function() {
 			return _curPokemon=window.getComputedStyle(_mediaQuery,':after').getPropertyValue('content');
@@ -47,7 +47,7 @@
 		};
 
 		curPokemon=this.pokeball();
-		
+
 		return this;
 	}
 
