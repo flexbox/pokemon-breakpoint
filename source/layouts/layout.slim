@@ -6,8 +6,8 @@ html
     meta name='description' content="A fun way to make the connection between breaking points in CSS media queries and Javascript files."
     meta name='keywords' content='David, leuliette, pokemon, css, breakpoint, javascript'
     meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
-    meta property='og:description' content="A fun way to make the connection between breaking points in CSS media queries and Javascript files."
 
+    meta property='og:description' content="A fun way to make the connection between breaking points in CSS media queries and Javascript files."
     meta property='og:image' content='http://tiste.io/images/pokeball.png'
     meta property='og:site_name' content='flexbox'
     meta property='og:title' content=(data.page.title)
@@ -17,11 +17,11 @@ html
     link href='favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Kreon|PT+Sans&effect=fire-animation'
     = stylesheet_link_tag 'application'
-    = partial 'layouts/analytics'
+    = partial 'views/analytics'
   body
-    = partial 'header'
+    = partial 'views/header'
     == yield
-    = partial 'footer'
+    = partial 'views/footer'
     a href="#{data.settings.social.google_plus}?rel=author" class="hide"
       Google
 
