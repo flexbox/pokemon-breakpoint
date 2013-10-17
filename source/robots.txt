@@ -1,1 +1,3 @@
-User-agent: *
+Sitemap: http://www.pokemonbreakpoint.fr/sitemap.xml
+User-Agent: *
+Disallow:
