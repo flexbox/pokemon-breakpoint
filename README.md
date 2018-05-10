@@ -43,10 +43,6 @@ You can listen to different break point groups by creating many PokeBreak instan
 - Read the [associated blog post](http://blog.davidleuliette.com)
 - Ding into code and read `stylesheets/pokemon.scss`
 
-## Demo
-
-You can watch the online version : http://pokemonbreakpoint.fr
-
 ## Contribute
 
 This is Github folks!
